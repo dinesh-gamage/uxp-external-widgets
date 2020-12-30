@@ -12,10 +12,10 @@ registerWidget({
     widget: EquipmentRegisterWidget,
     configs: {
         layout: {
-            // w: 12,
-            // h: 12,
-            // minH: 12,
-            // minW: 12
+            w: 9,
+            h: 11,
+            minH: 11,
+            minW: 9
         }
     }
 });

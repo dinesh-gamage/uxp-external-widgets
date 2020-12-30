@@ -8,7 +8,6 @@ interface IEquipmentRegisterProps {
 }
 
 interface ITestModel {
-    equipmentId?: string
     testID: string,
     isEnabled: boolean
 }
@@ -34,7 +33,6 @@ const EquipmentRegisterWidget: React.FunctionComponent<IEquipmentRegisterProps> 
     let [models, setModels] = React.useState<any[]>([])
     let [newModel, setNewModel] = React.useState<ITestModel>({
         testID: "",
-        equipmentId: "",
         isEnabled: false
     })
 
@@ -123,7 +121,7 @@ const EquipmentRegisterWidget: React.FunctionComponent<IEquipmentRegisterProps> 
 
     const addModel = () => {
         uxpContext.executeAction("c2o.EquipRegister", "AddTest", {
-            EquipmentID: newModel?.equipmentId,
+            EquipmentID: selected,
             TestID: newModel.testID,
             IsEnabled: newModel.isEnabled ? 1 : 0
         }, { json: true })
@@ -142,7 +140,6 @@ const EquipmentRegisterWidget: React.FunctionComponent<IEquipmentRegisterProps> 
 
     const resetNewModel = () => {
         setNewModel({
-            equipmentId: "",
             testID: "",
             isEnabled: false
         })
@@ -177,12 +174,14 @@ const EquipmentRegisterWidget: React.FunctionComponent<IEquipmentRegisterProps> 
                     <div className="add-test-model">
                         <FormField>
                             <Label>Equipment</Label>
-                            <Select
+                            {/* <Select
                                 options={equipments}
-                                selected={newModel.equipmentId}
+                                selected={selected}
                                 onChange={(val) => setNewModel(prev => ({ ...prev, ...{ equipmentId: val } }))}
                                 placeholder="Select an Equipment"
-                            />
+                                
+                            /> */}
+                            <div className="value">{selected}</div>
                         </FormField>
                         <FormField>
                             <Label>Model</Label>
