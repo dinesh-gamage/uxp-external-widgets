@@ -5,7 +5,12 @@
         {
             "id":"EquipmentRegister",
             "title":"EquipmentRegister",
-            "description":"Widget to register & test equipments "
+            "description":"Register Equipments for testing"
+        },
+        {
+            "id":"TestOutputWidget",
+            "title":"TestOutputWidget",
+            "description":"Equipment test output log"
         }
     ],
     "sidebarLinks":[]
