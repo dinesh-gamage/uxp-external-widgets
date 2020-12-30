@@ -190,6 +190,7 @@ const EquipmentRegisterWidget: React.FunctionComponent<IEquipmentRegisterProps> 
                                 selected={newModel.testID}
                                 onChange={(val) => setNewModel(prev => ({ ...prev, ...{ testID: val } }))}
                                 placeholder="Select an Model"
+                                showEndOfContent={false}
                             />
                         </FormField>
                         <FormField>
