@@ -1,0 +1,16 @@
+{
+    "id":"a6b296fc-1155-4ced-8242-b52d7825a5f1",
+    "author":"",
+    "widgets":[
+        {
+            "id":"EquipmentRegister",
+            "title":"EquipmentRegister",
+            "description":"A sample widget"
+        }
+    ],
+    "sidebarLinks":[
+        {
+            "id":"EquipmentRegisterLink"
+        }
+    ]
+}

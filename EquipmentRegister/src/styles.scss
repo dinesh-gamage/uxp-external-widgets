@@ -1,0 +1,108 @@
+.er-content {
+    width: 100%;
+    height: 90%;
+
+    & > .data-list-container {
+        .data-list {
+            .data-list-item {
+                & > .equipment-item {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 10px 20px;
+
+                    & > .id,
+                    & > .name,
+                    & > .actions {
+                        min-width: 100px;
+                        flex-shrink: 0;
+                    }
+                    & > .actions {
+                        & > .uxp-button {
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.test-modules-modal {
+    & > .modal-backdrop {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    & > .modal-panel {
+        min-width: 40%;
+        max-width: 40%;
+
+        .modal-header {
+            & > .header {
+                width: 90%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                & > .uxp-button {
+                    margin: 0;
+                }
+            }
+        }
+
+        .modal-body {
+            & > .data-list-container {
+                .data-list {
+                    .data-list-item {
+                        border: none;
+                        border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+
+                        &:last-child {
+                            border: none;
+                        }
+
+                        & > .test-model-item {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            padding: 0px 20px;
+
+                            & > .name,
+                            & > .status,
+                            & > .delete {
+                                min-width: 100px;
+                                flex-shrink: 0;
+                            }
+
+                            & > .name {
+                                width: 70%;
+                            }
+                            & > .status,
+                            & > .delete {
+                                width: 15%;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &>.add-test-model {
+                width: 100%;
+                height: 100%;
+
+                &>.row {
+                    width: 100%;
+                    height: auto;
+                    margin-top: 20px;
+                    display:  flex;
+                    align-items: center;
+                    justify-content: flex-end;
+
+                    &>.uxp-button {
+                        margin: 4px;
+                    }
+                }
+            }
+        }
+    }
+}
