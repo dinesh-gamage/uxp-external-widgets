@@ -1,8 +1,8 @@
 import * as React from "react";
 import { registerWidget,} from './uxp';
 import './styles.scss';
-import EquipmentRegisterWidget from "./EquipmentRegisterWidget";
-import TestOutputWidget from "./TestOutPut";
+import EquipmentRegisterWidget from "./Equipment/EquipmentRegisterWidget";
+import TestOutputWidget from "./TestOutput/TestOutPut";
 
 /**
  * Register as a Widget
@@ -13,7 +13,7 @@ registerWidget({
     widget: EquipmentRegisterWidget,
     configs: {
         layout: {
-            w: 9,
+            w: 10,
             h: 11,
             minH: 11,
             minW: 9
@@ -27,10 +27,10 @@ registerWidget({
     widget: TestOutputWidget,
     configs: {
         layout: {
-            w: 9,
+            w: 20,
             h: 11,
             minH: 11,
-            minW: 9
+            minW: 20
         }
     }
 });

@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { FilterPanel, FormField, Label, Select, TitleBar, useMessageBus, WidgetWrapper } from 'uxp/components';
 import OutPutListComponent from './OutPutListComponent';
-import { IContextProvider } from './uxp';
+import { IContextProvider } from '../uxp';
 
 interface ITestOutPutWidgetProps {
     uxpContext: IContextProvider
@@ -23,7 +23,6 @@ const TestOutputWidget: React.FunctionComponent<ITestOutPutWidgetProps> = (props
 
 
     useMessageBus(uxpContext, "c2o.TestOutput.NewEntry", (payload, channel) => {
-        alert(payload)
         setCount(prev => (prev+=1))
         return "updated"
     })

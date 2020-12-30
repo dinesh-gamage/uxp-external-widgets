@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Button, DataList } from 'uxp/components';
-import { IContextProvider } from './uxp';
+import { IContextProvider } from '../uxp';
 
 
 interface IEquipmentListProps {

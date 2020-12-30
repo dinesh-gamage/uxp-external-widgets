@@ -1,5 +1,5 @@
 import * as React from "react";
-import { IContextProvider, } from './uxp';
+import { IContextProvider, } from '../uxp';
 import { TitleBar, WidgetWrapper, DataList, Button, Modal, Checkbox, FormField, useToast, IconButton, Label, Select } from "uxp/components";
 import EquipmentList from "./EquipmentList";
 
