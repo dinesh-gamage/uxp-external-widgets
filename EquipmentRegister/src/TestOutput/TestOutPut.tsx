@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { FilterPanel, FormField, Label, Select, TitleBar, useMessageBus, WidgetWrapper } from 'uxp/components';
+import { FilterPanel, FormField, Label, Select, TitleBar, useMessageBus, useToast, WidgetWrapper } from 'uxp/components';
 import OutPutListComponent from './OutPutListComponent';
 import { IContextProvider } from '../uxp';
 
@@ -21,6 +21,7 @@ const TestOutputWidget: React.FunctionComponent<ITestOutPutWidgetProps> = (props
     let [args, setArgs] = React.useState({})
     let [count, setCount] = React.useState<number>(0)
 
+    let Toast = useToast()
 
     useMessageBus(uxpContext, "c2o.TestOutput.NewEntry", (payload, channel) => {
         setCount(prev => (prev+=1))
@@ -67,7 +68,7 @@ const TestOutputWidget: React.FunctionComponent<ITestOutPutWidgetProps> = (props
     }
 
 
-    return (<WidgetWrapper>
+    return (<WidgetWrapper className="equipment-test-output-widget">
         <TitleBar title="Test Model's Output">
             <FilterPanel
                 onClear={() => { setFilters({ equipment: "", model: "" }); setArgs({}) }}

@@ -156,7 +156,7 @@ const EquipmentRegisterWidget: React.FunctionComponent<IEquipmentRegisterProps> 
     </div>
 
     return (
-        <WidgetWrapper>
+        <WidgetWrapper className="equipment-register-widget">
             <TitleBar title='EquipmentRegister'></TitleBar>
 
             <EquipmentList uxpContext={uxpContext} onSelectEquipment={setSelected} />

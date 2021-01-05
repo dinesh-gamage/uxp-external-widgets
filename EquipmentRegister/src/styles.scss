@@ -1,31 +1,44 @@
-.er-content {
-    width: 100%;
-    height: 90%;
+.equipment-register-widget {
+    position: relative;
+    padding: 70px 0 20px 0;
 
-    & > .data-list-container {
-        .data-list {
-            .data-list-item {
-                & > .equipment-item {
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-                    padding: 10px 20px;
+    & > .uxp-widget-title-bar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 60px;
+    }
 
-                    & > .id {
-                        width: 20%;
-                        flex-shrink: 0;
-                    }
-                    & > .name {
-                        width: auto;
-                        flex-shrink: 0;
-                    }
-                    & > .actions {
-                        width: 20%;
-                        min-width: 120px;
-                        flex-shrink: 0;
+    .er-content {
+        width: 100%;
+        height: 100%;
 
-                        & > .uxp-button {
-                            font-size: 10px;
+        & > .data-list-container {
+            .data-list {
+                .data-list-item {
+                    & > .equipment-item {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        padding: 10px 20px;
+
+                        & > .id {
+                            width: 20%;
+                            flex-shrink: 0;
+                        }
+                        & > .name {
+                            width: auto;
+                            flex-shrink: 0;
+                        }
+                        & > .actions {
+                            width: 20%;
+                            min-width: 120px;
+                            flex-shrink: 0;
+
+                            & > .uxp-button {
+                                font-size: 10px;
+                            }
                         }
                     }
                 }
@@ -120,34 +133,47 @@
     }
 }
 
-.tow-content {
-    width: 100%;
-    height: 90%;
+.equipment-test-output-widget {
+    position: relative;
+    padding: 70px 0 20px 0;
 
-    & > .data-list-container {
-        .data-list {
-            .data-list-item {
-                & > .log-item {
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-                    padding: 10px 20px;
+    & > .uxp-widget-title-bar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 60px;
+    }
 
-                    & > .e-id {
-                        width: 15%;
-                        flex-shrink: 0;
-                    }
-                    & > .t-id {
-                        width: 25%;
-                        flex-shrink: 0;
-                    }
-                    & > .msg {
-                        width: 35%;
-                        flex-shrink: 0;
-                    }
-                    & > .t-stamp {
-                        width: 25%;
-                        flex-shrink: 0;
+    .tow-content {
+        width: 100%;
+        height: 100%;
+
+        & > .data-list-container {
+            .data-list {
+                .data-list-item {
+                    & > .log-item {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        padding: 10px 20px;
+
+                        & > .e-id {
+                            width: 15%;
+                            flex-shrink: 0;
+                        }
+                        & > .t-id {
+                            width: 25%;
+                            flex-shrink: 0;
+                        }
+                        & > .msg {
+                            width: 35%;
+                            flex-shrink: 0;
+                        }
+                        & > .t-stamp {
+                            width: 25%;
+                            flex-shrink: 0;
+                        }
                     }
                 }
             }
