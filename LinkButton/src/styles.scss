@@ -1,0 +1,30 @@
+.link-btn-widget-cont {
+    & > .link {
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+
+        .icon-container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                width: 40%;
+                height: 40%;
+                object-fit: contain;
+            }
+
+            .text {
+                width: 90%;
+                height: auto;
+                text-align: center;
+                padding: 10px;
+                margin-top: 10px;
+            }
+        }
+    }
+}

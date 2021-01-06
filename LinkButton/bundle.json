@@ -1,0 +1,16 @@
+{
+    "id":"b2128b9e-0ab2-497d-8c97-77162c382ab3",
+    "author":"",
+    "widgets":[
+        {
+            "id":"LinkButton",
+            "title":"LinkButton",
+            "description":"A sample widget"
+        }
+    ],
+    "sidebarLinks":[
+        {
+            "id":"LinkButtonLink"
+        }
+    ]
+}
